@@ -1,7 +1,7 @@
 ﻿using System;
 
 //ref link:https://www.youtube.com/watch?v=S8hkZTCtyrc&list=PLRwVmtr-pp06rfSgNYu_oBg40DkwXiRHt&index=7
-//
+// Manifest - important for compiling and run assemblies but modules dont have manifest
 
 /*----------------------------------CMD------------------------------------
  * 
@@ -192,6 +192,38 @@ C:\Users\sunny\source\repos\Assembly Manifest\Assembly Manifest>dir
 22/09/2023  05:16 am    <DIR>          Properties
                7 File(s)         21,606 bytes
                5 Dir(s)  489,876,221,952 bytes free
+
+C:\Users\sunny\source\repos\Assembly Manifest\Assembly Manifest>ildasm /out:moo.txt MeModule.netmodule
+
+C:\Users\sunny\source\repos\Assembly Manifest\Assembly Manifest>moo.txt
+---------------------------NOTEPAD: moo.txt-----------------------------------
+--------------------MODULE dont have manifest --------------
+
+//  Microsoft (R) .NET Framework IL Disassembler.  Version 4.8.3928.0
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+
+
+
+// Metadata version: v4.0.30319
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.module MeModule.netmodule
+// MVID: {4570186B-B8DE-4D5D-8291-8000033AE6E3}
+.imagebase 0x10000000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x00000001    //  ILONLY
+// Image base: 0x051C0000
+
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file moo.res
+
+
+---------------------------NOTEPAD: moo.txt-----------------------------------END
 
 
 
