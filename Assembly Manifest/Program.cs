@@ -168,6 +168,30 @@ C:\Users\sunny\source\repos\Assembly Manifest\Assembly Manifest>moo.txt
 // WARNING: Created Win32 resource file moo.res
 
 -------------------------------------------------------------------------
+C:\Users\sunny\source\repos\Assembly Manifest\Assembly Manifest>csc /t:module /out:MeModule.netmodule Program.cs
+Microsoft (R) Visual C# Compiler version 4.7.0-3.23416.8 (43b0b05c)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+C:\Users\sunny\source\repos\Assembly Manifest\Assembly Manifest>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\Assembly Manifest\Assembly Manifest
+
+22/09/2023  05:33 am    <DIR>          .
+22/09/2023  05:33 am    <DIR>          ..
+22/09/2023  05:17 am               189 App.config
+22/09/2023  05:17 am             2,384 Assembly Manifest.csproj
+22/09/2023  05:17 am    <DIR>          bin
+22/09/2023  05:25 am             3,584 MeDll.dll
+22/09/2023  05:33 am             2,560 MeModule.netmodule
+22/09/2023  05:27 am               636 moo.res
+22/09/2023  05:27 am             4,788 moo.txt
+22/09/2023  05:17 am    <DIR>          obj
+22/09/2023  05:29 am             7,465 Program.cs
+22/09/2023  05:16 am    <DIR>          Properties
+               7 File(s)         21,606 bytes
+               5 Dir(s)  489,876,221,952 bytes free
 
 
 
